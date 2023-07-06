@@ -1,7 +1,8 @@
-import type { Item } from './app';
+import type { Listing } from './Types';
 import ProductCard from './ProductCard';
 
-function Listing( { items }: lis) {
+function Listing( { items }: Listing) {
+
 
   return (
     <>
@@ -11,7 +12,3 @@ function Listing( { items }: lis) {
 }
 
 export default Listing
-
-type lis = {
-  items: Array<Item>
-}

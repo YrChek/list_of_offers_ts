@@ -1,8 +1,8 @@
-import React from 'react'
+import type { ProductCard } from './Types';
 
-function ProductCard({ item }) {
+function ProductCard({ item }: ProductCard) {
   const {url, MainImage, title, currency_code, price, quantity } = item
-  let currencyCode;
+  let currencyCode: string;
   let level;
   let name;
   switch (item.currency_code) {
